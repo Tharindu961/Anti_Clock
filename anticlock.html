@@ -197,6 +197,24 @@
 			diallines[i].style.transform = "rotate(" + 6 * i + "deg)";
 			
 		}
+		function clock() {
+			var weeday = new Array(7),
+			d = new Date(),
+			h = d.getHours(),
+			m = d.getMinutes(),
+			s = d.getSeconds(),
+			date = d.getDate(),
+			month = d.getMonth() + 1,
+			year = d.getYear(),
+
+			hDeg = h * 30 + m * (360/720),
+			mDeg = m * 30 + s * (360/720),
+			sDeg = s * 6,
+
+			hE1 = document.querySelector('.hour-hand'),
+			hE1 = document.querySelector('.hour-hand'),
+
+		}
 
 	</script>
 	
